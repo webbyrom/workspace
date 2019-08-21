@@ -1,0 +1,981 @@
+
+:root {
+  --section-bg-blue:#2980b9;
+  --section-bg-white: #FFFFFF;
+  --nav-bg-black:#333;
+
+}
+
+
+
+body {
+  margin: 0;
+  text-align: center;
+  background-color: var(--section-bg-blue);
+  font-family: 'Rubik','sans-serif';
+}
+
+section {
+  text-align: center;
+  padding: 0px 0 200px 0;
+}
+
+h2 {
+  color: var(--section-bg-white);
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 80px 0;
+     
+}
+
+
+
+h3 {
+  color: var(--section-bg-blue);
+  font-size: 20px;
+  text-transform: uppercase;
+  padding:0 30px 0 30px;
+  
+}
+
+p {
+    padding: 0 40px;
+    text-align: left;
+    color: grey;
+    text-align: justify;
+}
+
+
+/**********  barre de navigation*******/
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: var(--nav-bg-black);
+  overflow: hidden;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-radius: 2px;
+  z-index: 1;
+
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  display:inline-block;
+  color: var(--section-bg-white);
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+.top-icon {
+  padding: 0px 16px 15px 16px!important;
+
+ /* padding: 0 16px 14px 0 !important;
+  position: sticky;
+  top: 10px;*/
+}
+
+.top-icon img { 
+  padding-top: 2px !important;
+  position: relative;
+  top: 6px;
+  width: 36px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: var(--section-bg-blue);
+  color: var(--section-bg-white);
+  transition-duration: 1.2s;
+  border-radius: 2px;
+}
+
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: var(--section-bg-blue);
+ /* background-color: #71649b;*/
+  color: var(--section-bg-white);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+/*.topnav .icon {
+  display: none;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/*@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+/*@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+/********end nab-bar*****************/
+
+.parallax {
+  position: relative;
+  background: url(../images/img_fond2.jpg) no-repeat ;
+  background-size: cover;
+  height: 100vh;
+  top:0;
+  z-index: -5;
+}
+ 
+ .parallax-1 {
+  padding: 0!important;
+ }
+
+/********Css des divider********/
+.divider {
+  width: 100%;
+  height: 5px;
+  background: #a5c0d2;
+  opacity: .3;
+  margin: 0 auto;
+}
+
+ .prestations-title {
+  padding: 80px 0;
+   
+ }
+
+/************Css des différentes sections*****/
+#Prestations-divider {
+  width: 100%!important;
+  height: 5px;
+  background: #a5c0d2;
+  opacity: .3;
+   /*margin: 0 auto;*/
+}
+
+#Prestations {
+  /*overflow: hidden;*/
+  /*display: flex;*/
+ /*flex-direction: row;
+  justify-content: space-around;*/
+  /*margin: 0 20px;*/
+  padding: 0px 0 200px 0;
+  background-color: var(--section-bg-blue);
+}
+
+/*#Prestations >div{
+  width: 24%;
+}*/
+
+#Pourquoi, #Contactez-moi {
+  background:var(--section-bg-white);
+ }
+
+ #Contactez-moi h2 {
+  color: var(--section-bg-blue);
+}
+
+#Pourquoi h2 {
+  color: var(--section-bg-blue);
+ }
+
+#Realisations {
+ background: var(--section-bg-blue);
+}
+
+#Realisations h2 {
+  color: var(--section-bg-white);
+ /* padding-bottom: 40px;*/
+}
+
+.down_page p {
+  background: var(--section-bg-blue);
+  height: 80px;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 0;
+  color: var(--section-bg-white);
+}
+
+/**********flip*************/
+.flip {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.taille {
+  width: 24%;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: auto;
+  height: 420px;
+  perspective: 1000px;
+ 
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.3s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  transform: rotateX(0deg);/* pour compatibilité firefox*/
+  z-index: 2;
+}
+
+.flip-card-front h3 {
+  position: absolute;
+  top: -7px;
+  width: 85%;
+ 
+}
+
+.flip-card-back {
+  background-color: var(--section-bg-white);
+  color: var(--section-bg-white);
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+.img_flip {
+ width: 100%;
+ height: 100%;
+}
+
+/**********fin flip********/
+
+/*********** partie projet********/
+.row-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ /*padding: 0 20px;*/
+  align-items: stretch;
+  margin-bottom: 40px;
+ /* margin-top: 40px;*/
+ }
+
+.Thumbnail img {  
+  width: 90%;
+  height: 100%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  border-radius: 5px;
+}
+
+.Thumbnail img:hover {
+  box-shadow: 10px 10px 50px var(--section-bg-white);
+  filter: none;
+  -webkit-filter: none; 
+}
+/********partie carousel******************/
+
+.carousel-size {
+  background: url(../images/carousel-img3.png);
+  background-size: contain;
+  background-repeat: no-repeat no-repeat; 
+  margin:0 10px;
+}
+
+.carousel-size p{
+ /* height: 275px;*/
+ /* padding: 70px 50px 11px 50px !important;*/
+  /*width: 100vh;*/
+  padding-top: 35px;
+  margin: 6%;
+  
+}
+
+.img-car-all {
+  padding: 11% 0;
+  width: 60%;
+  margin:auto;
+}
+
+/*.img-car2 {
+ /* padding: 5% 0;*/
+ /* width: 60%;
+  margin:auto;
+}
+/*
+.img-car3 {
+  padding: 10% 0;
+  width: 60%;
+  margin:auto;
+}
+
+.img-car4 {
+  padding: 10% 0;
+  width: 60%;
+  margin:auto;
+}*/
+
+.slick-next {
+  font-size: 0px;
+  position: absolute;
+  right: calc( 50% - 55px);
+  bottom:-30px;
+  background-color: transparent;
+  border:none;
+  outline: none;
+}
+
+.slick-next:before {
+  content: '>';
+  position: absolute;
+  font-size: 40px;
+  bottom: -30px; 
+}
+
+.slick-next:hover{
+  color: var(--section-bg-blue);
+  cursor: pointer;
+}
+
+.slick-prev {
+  position: absolute;
+  font-size: 0px;
+  bottom: -30px; 
+  left: calc( 50% - 75px);
+  background-color: transparent;
+  border:none;
+  outline: none;
+}
+
+.slick-prev:before {
+  content: '<';
+  position: absolute;
+  font-size: 40px;
+  bottom: -30px; 
+}
+
+.slick-prev:hover{
+  color: var(--section-bg-blue);
+  cursor: pointer;
+}
+
+/*********************Partie Contact****************/
+label {
+  display: flex;
+  font-weight: bold;
+  color: var(--section-bg-blue);
+}
+
+input {
+  width: 350px;
+  height: 35px ;
+  margin-top: 10px;
+  padding-left: 5px;
+
+}
+
+input:hover {
+  border: 2px solid var(--section-bg-blue) ;
+  opacity: 0.5;
+  cursor: text;
+  font-family: inherit;
+}
+
+span {
+  color: grey;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  padding-left: 5px;
+  margin-top: 10px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 15px;
+  box-sizing: border-box;
+   
+}
+
+textarea:hover {
+  border: 2px solid var(--section-bg-blue) ;
+  opacity: 0.5;
+  padding: 2px;
+
+}
+
+.formulaire-contact {
+  display: inline-flex;
+  margin: auto;
+  font-family: inherit;
+  font-size: 22px;
+}
+
+.prenom-nom {
+  display: flex;
+}
+
+.mail-tel {
+  display: flex;
+}
+
+.message-information {
+  display: block;
+}
+
+.button1 {
+  background-color: var(--section-bg-blue);
+  color: var(--section-bg-white);
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  font: inherit;
+}
+
+.button1:hover {
+  opacity: .5;
+  transition-duration: 1s;
+  color: black;
+  cursor: pointer;
+}
+
+.nom-form, .email-form {
+  margin-right: 20px;
+}
+
+.informations-form >p {
+  padding: 0;
+}
+
+/************* bouton scrollup******/
+.scrollup {
+  position :fixed;
+  bottom: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 20px;
+  opacity: .5;
+  right:20px;
+
+}
+
+.scrollup:hover{
+  transition-duration: 1s;
+  background-color: var(--section-bg-blue);
+}
+
+.scrollup a {
+  position: absolute;
+  color: var(--section-bg-white);
+  font-size: 20px;
+  top: calc( 50% - 12px ) ;
+  text-align: left!important;
+  right: calc( 50% - 30px) ;
+  text-decoration: none;
+
+}
+
+.scrollup a:hover {
+  transition-duration: 1s;
+  color: var(--section-bg-white);
+} 
+/*********************fin scrollup*********************/
+
+/***************début tableau horaire********************/
+
+
+
+.contact-tel {
+  margin: 80px 10px ;
+  display: inline-flex;
+  background-image: url(../icon/phone-purple.svg) ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 25px;
+  /*margin-left: 250px;*/
+  box-shadow: 10px 5px 5px grey;
+  border-radius: 5px;
+  position: relative;/****nécessaire pour l'animation jquery****/
+}
+
+.contact-mail {
+  margin: 80px 0 ;
+  display: inline-flex;
+  background-image: url(../icon/mail.svg) ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 25px;
+  box-shadow: 10px 5px 5px grey;
+  border-radius: 5px;
+  position: relative; /******nécessaire pour l'animation jquery****/
+}
+
+.horaire {
+  position: relative;
+  left: 18px;
+  display: inline-grid;
+  width: 40%;
+  height: 250px;
+  cursor: pointer;
+  /*background-color:  var(--section-bg-blue);*/
+  /*opacity: 0.4;*/
+  color: black;
+  font-weight: bolder;
+  background-image: url(../images/horaire1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  box-shadow: 10px 5px 5px grey;
+}
+
+.horaire:hover {
+  transition-duration: 6s;
+  transform: rotateY(360deg) rotateX(360deg) scale(1.4);
+ }
+
+.days {
+  width: 50px;
+}
+
+.line-day {
+  height: 40px;
+ 
+}
+
+.line-hours {
+  height: 40px;  
+}
+
+
+.closed {
+  color: red;
+}
+
+
+
+/********************* responsive********************/
+@media screen and (max-width: 2560px ) {
+  .carousel-size p{
+   /* padding: 70px 50px 11px 50px !important;*/
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 2365px ) {
+  .img-car2{
+    padding: 9% 0;
+  }
+}
+
+@media screen and (max-width: 2300px ) {
+  .carousel-size p{
+   /* padding: 70px 50px 11px 50px !important;*/
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 2200px ) {
+  .carousel-size p{
+   /* padding: 70px 50px 11px 50px !important;*/
+    font-size: inherit;
+  }
+}
+
+@media screen and (max-width: 1400px ) {
+
+  .flip{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    column-gap: 0;
+  }
+
+  .creation{
+    grid-column: 1;
+    grid-row: 1;
+    margin: auto;
+    justify-content: space-between;
+    width: 95%;
+  }
+
+  .maintenance{
+    grid-column: 2;
+    grid-row: 1;
+    margin: auto;
+    justify-content: space-between;
+    width: 95%;
+  }
+
+  .depannage{
+    grid-column: 1;
+    grid-row: 2;
+    margin: auto;
+    justify-content: space-between;
+    width: 95%;
+  }
+
+  .developpement{
+    grid-column: 2;
+    grid-row: 2;
+    margin: auto;
+    justify-content: space-between;
+    width: 95%;
+  }
+  .flip-card-back >p {
+    font-size: 14px;
+  }
+
+  .flip-card-back >h3 {
+    font-size: 20px;
+  }
+
+  .carousel-size p{
+    height: 330px;
+    /*width: 100vh;*/
+    margin: 10%;
+    padding-top: 25px;
+  }
+
+  .img-car {
+    padding: 7% 0;
+    width: 80%;
+    margin:auto;
+  }
+
+  .img-car2 {
+    padding: 3% 0;
+    width: 80%;
+    margin:auto;
+  }
+
+  .img-car3 {
+    padding: 9% 0;
+    width: 80%;
+    margin:auto;
+  }
+
+  .img-car4 {
+    padding: 7% 0;
+    width: 75%;
+    margin:auto;
+  }
+   
+}
+
+
+/************** taille 1200px***********/
+@media screen and (max-width: 1200px ) {
+
+  nav {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .parallax{
+    width:100%;
+    background: url(../images/img_fond2.jpg) no-repeat ;
+    background-size: cover;
+  }
+
+  .carousel-size p{
+   margin: 6%;
+   width: auto;
+  }
+
+  .img-car {
+    padding: 7% 0;
+    width: 70%;
+    margin:auto;
+  }
+
+  .img-car2 {
+    padding: 7% 0;
+    width: 70%;
+    margin:auto;
+  }
+
+  .img-car3 {
+    padding: 9% 0;
+    width: 70%;
+    margin:auto;
+  }
+
+  .img-car4 {
+    padding: 7% 0;
+    width: 70%;
+    margin:auto;
+  }
+}
+
+/****************** 1080px************************************/
+@media screen and (max-width: 1080px ) {
+
+  .parallax{
+    width:100%;
+    background: url(../images/img_fond2.jpg) no-repeat ;
+    background-size: cover;
+  }
+  .slick-slide {
+    /*margin-left: 80px !important;*/
+    position: relative;
+    left: -57px;
+    width: 580px;
+  }
+  
+  .slick-track{
+    margin-left: 10.86% !important;
+  }
+
+  .slick-list{
+    width: 56%;
+    margin: auto !important;
+  }
+  
+  .slick-prev {
+    left: calc( 50% - 83px);
+    bottom: 30px;
+    height: 350px;
+    z-index: 1;
+  }
+
+  .slick-next {
+   /* font-size: 0px;
+    position: absolute;*/
+    right: calc( 50% - 50px);
+    bottom: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+}
+
+/************960px*********************/
+@media screen and (max-width: 960px ) {
+
+ .topnav{
+    position: static;
+    background-color: var(--nav-bg-black);
+  }
+
+  .header-icon {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 32px;
+    background-color: red;
+    float: left;
+    cursor: pointer;
+    padding: 8px  16px 15px 16px !important;
+    cursor: pointer;
+  }
+
+  .header-icon:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 0;
+    box-shadow: 0 10px 0 1px #FFF,0 16px 0 1px #FFF, 0 22px 0 1px #FFF, 0 28px 0 1px #FFF
+  }
+
+  .menu{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: var(--nav-bg-black);
+    transform: translateX(-250px);
+  }
+  
+  .topnav a{
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid gray;
+  }
+
+  .with-sidebar .menu{
+    transform: translateX(0px);
+  }
+
+  .parallax{
+    width:100%;
+    background: url(../images/img_fond2.jpg) no-repeat ;
+    background-size: cover;
+  }
+
+  .img-car2 {
+    width: 65%;
+  }
+
+}
+
+/**************850px***************************/
+@media screen and (max-width:850px ) {
+  .parallax{
+    width:100%;
+    background: url(../images/img_fond2.jpg) no-repeat ;
+    background-size: contain;
+  }
+ 
+  .img-car4{
+    width: 62%;
+  }
+
+  .slick-prev{
+    bottom: 80px;
+  }
+
+  .slick-next{
+    bottom: 80px;
+  }
+
+}
+
+
+/************760px*************************/
+@media screen and (max-width:760px ) {
+  .parallax{
+    width:100%;
+    background: url(../images/img_fond2.jpg) no-repeat ;
+    background-size: contain;
+  }
+   
+  .flip{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .taille{
+    width: 80%;
+    margin-bottom: 65px;
+  }
+
+  /*********** carousel***********/
+  .carousel-size{
+    margin-left: 20px;
+  }
+
+  .carousel-size p{
+    font-size: 1em;
+    line-height: 1.2em;
+  }
+
+  .img-car-all{
+    display: none !important;
+  }
+  .slick-next {
+    bottom: 135px;
+    right: calc( 50% - 55px);
+  }
+  .slick-prev {
+    bottom: 135px;
+    left: calc( 50% - 105px);
+  }
+
+  /*********** thumbnail***********/
+
+  .col-thumbnail{
+    padding-bottom: 16px;
+  }
+
+ .row-1{
+    width: 100%;
+    display: block;
+    margin-bottom: 0;
+  } 
+
+  .Thumbnail img {
+    width: 80%;
+    
+  }
+/*********************contact*****************/
+  .prenom-nom, .mail-tel{
+    display: flex;
+    flex-wrap: wrap;
+    margin:5px 20px;   
+  }
+
+  .message-information, .button1, .informations-form {
+    display: block;
+    margin:5px 20px;   
+  }
+
+  .contact-tel, .contact-mail {
+    margin: 25px auto;
+    display: block;
+    width: 40%;
+    text-align: center;
+  }
+
+  .horaire {
+    width: 80%;
+  }
+
+  .horaire:hover {
+    transition-duration: 6s;
+    transform: rotateY(360deg) rotateX(360deg);
+  }
+
+}
+/*****************500px****************/
+@media screen and (max-width:500px ) {
+
+  .parallax{
+    width:100%;
+    background: url(../images/img_fond2.jpg) no-repeat ;
+    background-size: contain;
+  }
+
+
+
+  .slick-next {
+    bottom: 135px;
+    right: calc( 50% - 55px);
+  }
+  .slick-prev {
+    bottom: 135px;
+    left: calc( 50% - 111px);
+  }
+}
+
+
+
+/*********************400px*****************/
