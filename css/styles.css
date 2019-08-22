@@ -3,6 +3,7 @@
   --section-bg-blue:#2980b9;
   --section-bg-white: #FFFFFF;
   --nav-bg-black:#333;
+  --color-font-black:#333;
 
 }
 
@@ -621,6 +622,9 @@ textarea:hover {
     padding: 12.5%;
 
   }
+  .horaire{
+    left: 0;
+  }
 }
 
 @media screen and (max-width: 1400px ) {
@@ -701,7 +705,14 @@ textarea:hover {
     width: 75%;
     margin:auto;
   }
-   
+   .horaire {
+    width: 530px;
+    left: 0;
+  }
+
+  table {
+    width: 100%;
+  }
 }
 
 
@@ -968,7 +979,7 @@ textarea:hover {
     margin:5px 20px;   
   }
 
-  .message-information, .button1, .informations-form {
+  .message-information, .informations-form {
     display: block;
     margin:5px 20px;   
   }
@@ -977,12 +988,18 @@ textarea:hover {
     margin: 25px auto;
     display: block;
     width: 40%;
+    font-size: 21px;
+    color: var(--color-font-black);
     text-align: center;
   }
 
-  .horaire {
-    width: 80%;
+  .button1{
+    margin: auto;
   }
+
+  /*.horaire { mis en commentaire pour test
+    width: 80%;
+  }*/
 
   .horaire:hover {
     transition-duration: 6s;
@@ -995,6 +1012,11 @@ textarea:hover {
   h2{
     font-size: 20px;
   }
+  .contact-tel, .contact-mail {
+    width: 60%;
+    
+  }
+
 }
 
 /****************600px****************/
@@ -1011,18 +1033,23 @@ textarea:hover {
     bottom: 150px;
     left: calc( 50% - 84px);
   }
+  .horaire{
+    font-size: 14px;
+    left: 0;
+    width: 480px;
+  }
 }
 
 
 /*****************500px****************/
 @media screen and (max-width:500px ) {
-
+    /******** header***********/
   .parallax{
     width:100%;
     background: url(../images/img_fond2.jpg) no-repeat ;
     background-size: contain;
   }
-
+/************* carousel**********************/
   .slick-list{
     width: 75%;
   }
@@ -1045,8 +1072,43 @@ textarea:hover {
   .slick-next {
     bottom: 510px;
   }
+
+/************ formulaire contact*****************/
+  .contact-tel, .contact-mail{
+    width: 60%;
+    font-size: 21px;
+    color: var(--color-font-black);
+  }
+
+/**************horaire******************************/
+
+  .horaire{
+    width: 400px;
+    left: 0;
+    font-size: 14px;
+  }
+
+  table{
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
 }  
 
 
 
 /*********************400px*****************/
+@media screen and (max-width:500px ) {
+  .slick-list{
+    width: 56%;
+  }
+
+}
