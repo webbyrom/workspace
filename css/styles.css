@@ -1022,19 +1022,28 @@ textarea:hover {
     background: url(../images/img_fond2.jpg) no-repeat ;
     background-size: contain;
   }
+
+  .slick-list{
+    width: 75%;
+  }
+
+  .slick-slide{
+    width: 323px!important;
+  }
+
   .carousel-size p{
-    font-size: 12px;
-    padding-top: 15px;
+    font-size: 18px;
+    padding-top: 10px;
     text-align: center;
   }
 
   .slick-prev {
-    bottom: 190px;
-    left: calc( 50% - 91px);
+    bottom: 510px;
+    left: calc( 50% - 70px);
   }
 
   .slick-next {
-    bottom: 190px;
+    bottom: 510px;
   }
 }  
 
