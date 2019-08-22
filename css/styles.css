@@ -597,7 +597,7 @@ textarea:hover {
 
 @media screen and (max-width: 2365px ) {
   .img-car2{
-    padding: 9% 0;
+    padding: 10% 0;
   }
 }
 
@@ -606,12 +606,20 @@ textarea:hover {
    /* padding: 70px 50px 11px 50px !important;*/
     font-size: 20px;
   }
+
 }
 
 @media screen and (max-width: 2200px ) {
   .carousel-size p{
    /* padding: 70px 50px 11px 50px !important;*/
     font-size: inherit;
+  }
+  .img-car2{
+    padding: 9% 0;
+  }
+  .img-car{
+    padding: 12.5%;
+
   }
 }
 
