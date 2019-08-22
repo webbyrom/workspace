@@ -1022,6 +1022,20 @@ textarea:hover {
     background: url(../images/img_fond2.jpg) no-repeat ;
     background-size: contain;
   }
+  .carousel-size p{
+    font-size: 12px;
+    padding-top: 15px;
+    text-align: center;
+  }
+
+  .slick-prev {
+    bottom: 190px;
+    left: calc( 50% - 91px);
+  }
+
+  .slick-next {
+    bottom: 190px;
+  }
 }  
 
 
