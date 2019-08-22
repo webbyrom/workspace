@@ -856,7 +856,7 @@ textarea:hover {
     left: calc( 50% - 80px);
     bottom: 30px;
   }
-  
+
   .slick-next{
     bottom: 30px ;
   }
@@ -870,6 +870,9 @@ textarea:hover {
     background-size: contain;
   }
  
+  h2{
+    font-size: 30px;
+  }
   .img-car4{
     width: 62%;
   }
@@ -880,10 +883,25 @@ textarea:hover {
 
   .slick-next{
     bottom: 80px;
+    left: calc( 50% + 24px);
   }
 
 }
+/************770px*************************/
+@media screen and (max-width:770px ) {
+  .slick-slide{
+    margin-left: 12px;
+  }
+  .slick-prev{
+    bottom: 80px;
+  }
 
+  .slick-next{
+    bottom: 80px;
+    left: calc( 50% + 24px);
+  }
+
+}
 
 /************760px*************************/
 @media screen and (max-width:760px ) {
@@ -892,6 +910,7 @@ textarea:hover {
     background: url(../images/img_fond2.jpg) no-repeat ;
     background-size: contain;
   }
+
    
   .flip{
     width: 100%;
@@ -918,12 +937,12 @@ textarea:hover {
     display: none !important;
   }
   .slick-next {
-    bottom: 135px;
+    bottom: 113px;
     right: calc( 50% - 55px);
   }
   .slick-prev {
-    bottom: 135px;
-    left: calc( 50% - 105px);
+    bottom: 113px;
+    left: calc( 50% - 73px);
   }
 
   /*********** thumbnail***********/
@@ -971,6 +990,13 @@ textarea:hover {
   }
 
 }
+/*****************650px****************/
+@media screen and (max-width:650px ) {
+  h2{
+    font-size: 20px;
+  }
+}
+
 /*****************500px****************/
 @media screen and (max-width:500px ) {
 
