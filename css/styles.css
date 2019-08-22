@@ -924,7 +924,7 @@ textarea:hover {
   }
 
   /*********** carousel***********/
-  .carousel-size{
+  .slick-slide{
     margin-left: 20px;
   }
 
@@ -997,6 +997,23 @@ textarea:hover {
   }
 }
 
+/****************600px****************/
+@media screen and (max-width:600px ) {
+  .slick-slide{
+    margin-left: 28px;
+  }
+
+  .slick-next {
+    bottom: 150px;
+  }
+
+  .slick-prev {
+    bottom: 150px;
+    left: calc( 50% - 84px);
+  }
+}
+
+
 /*****************500px****************/
 @media screen and (max-width:500px ) {
 
@@ -1005,18 +1022,7 @@ textarea:hover {
     background: url(../images/img_fond2.jpg) no-repeat ;
     background-size: contain;
   }
-
-
-
-  .slick-next {
-    bottom: 135px;
-    right: calc( 50% - 55px);
-  }
-  .slick-prev {
-    bottom: 135px;
-    left: calc( 50% - 111px);
-  }
-}
+}  
 
 
 
