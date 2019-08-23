@@ -761,7 +761,7 @@ textarea:hover {
 }
 
 /****************** 1080px************************************/
-@media screen and (max-width: 1080px ) {
+@media screen and (max-width: 1079px ) {
 
   .parallax{
     width:100%;
@@ -839,6 +839,7 @@ textarea:hover {
     width: 250px;
     background-color: var(--nav-bg-black);
     transform: translateX(-250px);
+    height: fit-content;
   }
   
   .topnav a{
@@ -898,6 +899,16 @@ textarea:hover {
   }
 
 }
+/*****************800px*****************/
+@media screen and (max-width: 815px ) {
+  .carousel-2 p{
+    padding-top: 10px;
+  }
+  .img-car2{
+    padding: 25px;
+  }
+}  
+
 /************770px*************************/
 @media screen and (max-width:770px ) {
   .slick-slide{
@@ -910,6 +921,14 @@ textarea:hover {
   .slick-next{
     bottom: 80px;
     left: calc( 50% + 24px);
+  }
+
+  .carousel-size p{
+    padding-top: 10px;
+  }
+
+  .img-car2 {
+    padding:5px;
   }
 
 }
@@ -1021,17 +1040,26 @@ textarea:hover {
 
 /****************600px****************/
 @media screen and (max-width:600px ) {
+  .carousel-size p{
+    padding-top: 0%;
+    font-size: 15px;
+    text-align: center;
+  }
   .slick-slide{
+   /* width: 342px !important;*/
     margin-left: 28px;
+   
   }
 
   .slick-next {
+     
     bottom: 150px;
   }
 
   .slick-prev {
-    bottom: 150px;
-    left: calc( 50% - 84px);
+    
+    bottom:150px;
+    left: calc( 50% - 94px);
   }
   .horaire{
     font-size: 14px;
@@ -1041,7 +1069,7 @@ textarea:hover {
 }
 
 
-/*****************500px****************/
+/*****************500px****************carousel validé*/
 @media screen and (max-width:500px ) {
     /******** header***********/
   .parallax{
@@ -1049,28 +1077,31 @@ textarea:hover {
     background: url(../images/img_fond2.jpg) no-repeat ;
     background-size: contain;
   }
+  #Pourquoi h2{
+    font-size: 17px;
+  }
 /************* carousel**********************/
   .slick-list{
     width: 75%;
   }
 
-  .slick-slide{
-    width: 323px!important;
-  }
-
   .carousel-size p{
-    font-size: 18px;
-    padding-top: 10px;
+    font-size: 17px;
+    padding: 10px 29px 0 29px;
     text-align: center;
   }
-
+  .carousel-2 p{
+    font-size: 16px;
+    padding-top: 5px;
+  }
+  
   .slick-prev {
-    bottom: 510px;
+    bottom: 140px;
     left: calc( 50% - 70px);
   }
 
   .slick-next {
-    bottom: 510px;
+    bottom: 140px;
   }
 
 /************ formulaire contact*****************/
@@ -1092,23 +1123,26 @@ textarea:hover {
     width: 100%;
   }
 
-
-
-
-
-
-
-
-
-
 }  
 
 
+/*********************360px carousel validé*****************/
+@media screen and (max-width: 400px ) {
+  .carousel-size p {
+    padding: 0px 13px 0 13px;
+  }
 
-/*********************400px*****************/
-@media screen and (max-width:500px ) {
-  .slick-list{
-    width: 56%;
+  .carousel-2 p {
+    font-size: 15px;
+  }
+
+  .slick-prev {
+    bottom: 170px;
+  }
+
+  .slick-next {
+    bottom: 170px;
+    left: calc( 50% - 7px);
   }
 
 }
