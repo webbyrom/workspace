@@ -1104,10 +1104,10 @@ textarea:hover {
     bottom: 140px;
   }
 
-/************ formulaire contact*****************/
+/************ contact*****************/
   .contact-tel, .contact-mail{
     width: 60%;
-    font-size: 21px;
+    font-size: 20px;
     color: var(--color-font-black);
   }
 
@@ -1125,8 +1125,16 @@ textarea:hover {
 
 }  
 
+/*********************400px ******/
+@media screen and (max-width: 450px) {
+.horaire {
+    width: 380px;
+    left: 0;
+    font-size: 13px;
+  }
+}
 
-/*********************360px carousel validé*****************/
+/*********************400px carousel validé*****************/
 @media screen and (max-width: 400px ) {
   .carousel-size p {
     padding: 0px 13px 0 13px;
@@ -1145,4 +1153,13 @@ textarea:hover {
     left: calc( 50% - 7px);
   }
 
+  .horaire {
+    width: 320px;
+    left: 0;
+    font-size: 10px;
+  }
+
+  .contact-tel, .contact-mail {
+    font-size: 16px;
+  } 
 }
