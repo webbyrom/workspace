@@ -875,13 +875,16 @@ textarea:hover {
     width: 62%;
   }
 
+  .slick-list{
+    left: 1%;
+  }
   .slick-prev{
     bottom: 80px;
   }
 
   .slick-next{
     bottom: 80px;
-    left: calc( 50% + 24px);
+    left: calc( 50% + 43px);
   }
 }
 /*****************800px*****************/
@@ -901,6 +904,7 @@ textarea:hover {
   }
   .slick-prev{
     bottom: 80px;
+    left: calc( 50% - 61px);
   }
 
   .slick-next{
@@ -970,7 +974,7 @@ textarea:hover {
   }
   .slick-prev {
     bottom: 113px;
-    left: calc( 50% - 73px);
+    left: calc( 50% - 60px);
   }
 
   /*********** thumbnail***********/
@@ -1036,10 +1040,19 @@ textarea:hover {
   .contact-tel, .contact-mail {
     width: 60%;
   }
+  .slick-next {
+    left: calc( 50% + 11px);
+  }
+
 }
 
 /****************600px****************/
 @media screen and (max-width:600px ) {
+
+  .slick-list{
+    left: 3%;
+  }
+
   .carousel-size p{
     padding-top: 0%;
     font-size: 15px;
@@ -1051,13 +1064,13 @@ textarea:hover {
   }
 
   .slick-next {
-     
+    left: calc( 50% + 22px); 
     bottom: 150px;
   }
 
   .slick-prev {
     bottom:150px;
-    left: calc( 50% - 94px);
+    left: calc( 50% - 59px);
   }
 
   .horaire{
@@ -1086,7 +1099,7 @@ textarea:hover {
   }
 
   #Pourquoi h2{
-    font-size: 17px;
+    padding: 50px 10px;
   }
 /************* carousel**********************/
   .slick-list{
@@ -1105,11 +1118,12 @@ textarea:hover {
   
   .slick-prev {
     bottom: 140px;
-    left: calc( 50% - 70px);
+    left: calc( 50% - 47px);
   }
 
   .slick-next {
     bottom: 140px;
+    left: calc( 50% + 28px);
   }
 
 /************ contact*****************/
@@ -1134,6 +1148,14 @@ textarea:hover {
 
 /*********************450px ******/
 @media screen and (max-width: 450px) {
+  .slick-prev {
+    left: calc( 50% - 60px);
+  }
+
+  .slick-next {
+    left: calc( 50% + 22px);
+  }
+
   .horaire {
     width: 380px;
     left: 0;
@@ -1152,6 +1174,10 @@ textarea:hover {
 /*********************400px carousel validé*****************/
 @media screen and (max-width: 400px ) {
 
+  .slick-list{
+    left: 3%;
+  }
+
   .carousel-size p {
     padding: 0px 13px 0 13px;
   }
@@ -1162,11 +1188,12 @@ textarea:hover {
 
   .slick-prev {
     bottom: 170px;
+    left: calc( 50% - 60px);
   }
 
   .slick-next {
     bottom: 170px;
-    left: calc( 50% - 7px);
+    left: calc( 50% + 13px);
   }
 
   .horaire {
@@ -1195,18 +1222,16 @@ textarea:hover {
     font-size: 13px;
   }
   /*************carousel****************/ 
-  #Pourquoi h2 {
-    font-size: 14px;
-}
-  .slick-slide{
-    width: 228px!important;
+  .slick-list{
+   left: 5%;
   }
+
   .slick-prev {
     top: -180px!important;
   }
 
   .slick-next {
-    bottom: 544px;
+    bottom: 187px;
     left: calc( 50% + 10px) !important;
   }
 
@@ -1219,6 +1244,7 @@ textarea:hover {
   .formulaire-contact {
     display: block;
     font-size: 16px;
+    padding-left: 10px;
   }
 
   .form-control {
@@ -1227,12 +1253,18 @@ textarea:hover {
 }
 
 /*********************320px  *****************/
-/*@media screen and (max-width: 320px ) {
-  .slick-slide{
-    width: 250px !important;
+@media screen and (max-width: 320px ) {
+  
+  .slick-list{
+    left: 11px;
+    width: 264px;
+  }
+  
+  .slick-next {
+    left: calc( 50% + 16px) !important;
   }
 
-  .slick-list{
-    width: 95% !important;
-  }
-}*/
+  .formulaire-contact {
+    padding-left: 0;
+  }  
+} 
