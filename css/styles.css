@@ -872,6 +872,8 @@ textarea:hover {
   .slick-next{
     bottom: 30px ;
   }
+
+
 }
 
 /**************850px***************************/
@@ -992,6 +994,10 @@ textarea:hover {
     
   }
 /*********************contact*****************/
+  .formulaire-contact {
+    display: block;
+  }  
+  
   .prenom-nom, .mail-tel{
     display: flex;
     flex-wrap: wrap;
@@ -1125,12 +1131,18 @@ textarea:hover {
 
 }  
 
-/*********************400px ******/
+/*********************450px ******/
 @media screen and (max-width: 450px) {
-.horaire {
+  .horaire {
     width: 380px;
     left: 0;
     font-size: 13px;
+  }
+  .prenom-nom, .mail-tel{
+    margin: 0;
+  }
+  .message-information{
+    margin: 0;
   }
 }
 
@@ -1162,4 +1174,17 @@ textarea:hover {
   .contact-tel, .contact-mail {
     font-size: 16px;
   } 
+}
+
+/*********************360px  *****************/
+@media screen and (max-width: 360px ) {
+  .informations-form {
+  margin: 0;
+  }
+  .formulaire-contact {
+    display: block;
+    font-size: 16px;
+  }
+  .form-control {
+    width: 310px;
 }
