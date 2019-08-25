@@ -926,10 +926,10 @@ textarea:hover {
     top: calc( 50% - 7px );
     right: calc( 50% - 16px);
   }
-  .scrollup a:hover {
+  /*.scrollup a:hover {
     transition-duration: 1s;
     color: var(--section-bg-white);
-  } 
+  } */
 }
 
 /************760px*************************/
