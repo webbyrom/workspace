@@ -30,21 +30,18 @@ h2 {
      
 }
 
-
-
 h3 {
   color: var(--section-bg-blue);
   font-size: 20px;
   text-transform: uppercase;
   padding:0 30px 0 30px;
-  
 }
 
 p {
-    padding: 0 40px;
-    text-align: left;
-    color: grey;
-    text-align: justify;
+  padding: 0 40px;
+  text-align: left;
+  color: grey;
+  text-align: justify;
 }
 
 
@@ -60,8 +57,6 @@ p {
   width: 100%;
   border-radius: 2px;
   z-index: 1;
-
-
 }
 
 /* Style the links inside the navigation bar */
@@ -96,7 +91,6 @@ p {
   transition-duration: 1.2s;
   border-radius: 2px;
 }
-
 
 /* Add an active class to highlight the current page */
 .active {
@@ -142,10 +136,10 @@ p {
   top:0;
   z-index: -5;
 }
- 
- .parallax-1 {
+
+.parallax-1 {
   padding: 0!important;
- }
+}
 
 /********Css des divider********/
 .divider {
@@ -156,7 +150,7 @@ p {
   margin: 0 auto;
 }
 
- .prestations-title {
+.prestations-title {
   padding: 80px 0;
    
  }
@@ -186,15 +180,15 @@ p {
 
 #Pourquoi, #Contactez-moi {
   background:var(--section-bg-white);
- }
+}
 
- #Contactez-moi h2 {
+#Contactez-moi h2 {
   color: var(--section-bg-blue);
 }
 
 #Pourquoi h2 {
   color: var(--section-bg-blue);
- }
+}
 
 #Realisations {
  background: var(--section-bg-blue);
@@ -231,7 +225,6 @@ p {
   width: auto;
   height: 420px;
   perspective: 1000px;
- 
 }
 
 .flip-card-inner {
@@ -321,7 +314,6 @@ p {
   /*width: 100vh;*/
   padding-top: 35px;
   margin: 6%;
-  
 }
 
 .img-car-all {
@@ -404,7 +396,6 @@ input {
   height: 35px ;
   margin-top: 10px;
   padding-left: 5px;
-
 }
 
 input:hover {
@@ -427,7 +418,6 @@ textarea {
   font-weight: bold;
   font-size: 15px;
   box-sizing: border-box;
-   
 }
 
 textarea:hover {
@@ -491,7 +481,6 @@ textarea:hover {
   padding: 20px;
   opacity: .5;
   right:20px;
-
 }
 
 .scrollup:hover{
@@ -507,7 +496,6 @@ textarea:hover {
   text-align: left!important;
   right: calc( 50% - 30px) ;
   text-decoration: none;
-
 }
 
 .scrollup a:hover {
@@ -566,7 +554,7 @@ textarea:hover {
 .horaire:hover {
   transition-duration: 6s;
   transform: rotateY(360deg) rotateX(360deg) scale(1.4);
- }
+}
 
 .days {
   width: 50px;
@@ -574,13 +562,11 @@ textarea:hover {
 
 .line-day {
   height: 40px;
- 
 }
 
 .line-hours {
   height: 40px;  
 }
-
 
 .closed {
   color: red;
@@ -607,7 +593,6 @@ textarea:hover {
    /* padding: 70px 50px 11px 50px !important;*/
     font-size: 20px;
   }
-
 }
 
 @media screen and (max-width: 2200px ) {
@@ -667,6 +652,7 @@ textarea:hover {
     justify-content: space-between;
     width: 95%;
   }
+
   .flip-card-back >p {
     font-size: 14px;
   }
@@ -872,8 +858,6 @@ textarea:hover {
   .slick-next{
     bottom: 30px ;
   }
-
-
 }
 
 /**************850px***************************/
@@ -899,7 +883,6 @@ textarea:hover {
     bottom: 80px;
     left: calc( 50% + 24px);
   }
-
 }
 /*****************800px*****************/
 @media screen and (max-width: 815px ) {
@@ -932,7 +915,6 @@ textarea:hover {
   .img-car2 {
     padding:5px;
   }
-
 }
 
 /************760px*************************/
@@ -943,7 +925,6 @@ textarea:hover {
     background-size: contain;
   }
 
-   
   .flip{
     width: 100%;
     display: flex;
@@ -991,8 +972,8 @@ textarea:hover {
 
   .Thumbnail img {
     width: 80%;
-    
   }
+
 /*********************contact*****************/
   .formulaire-contact {
     display: block;
@@ -1035,13 +1016,11 @@ textarea:hover {
 /*****************650px****************/
 @media screen and (max-width:650px ) {
   h2{
-    font-size: 20px;
+    font-size: 25px;
   }
   .contact-tel, .contact-mail {
     width: 60%;
-    
   }
-
 }
 
 /****************600px****************/
@@ -1054,7 +1033,6 @@ textarea:hover {
   .slick-slide{
    /* width: 342px !important;*/
     margin-left: 28px;
-   
   }
 
   .slick-next {
@@ -1063,10 +1041,10 @@ textarea:hover {
   }
 
   .slick-prev {
-    
     bottom:150px;
     left: calc( 50% - 94px);
   }
+
   .horaire{
     font-size: 14px;
     left: 0;
@@ -1083,6 +1061,15 @@ textarea:hover {
     background: url(../images/img_fond2.jpg) no-repeat ;
     background-size: contain;
   }
+
+  .flip-card-front >h3{
+    font-size: 18px;
+  }  
+
+  .flip-card-back >h3{
+    font-size: 18px;
+  }
+
   #Pourquoi h2{
     font-size: 17px;
   }
@@ -1128,7 +1115,6 @@ textarea:hover {
   table{
     width: 100%;
   }
-
 }  
 
 /*********************450px ******/
@@ -1138,9 +1124,11 @@ textarea:hover {
     left: 0;
     font-size: 13px;
   }
+
   .prenom-nom, .mail-tel{
     margin: 0;
   }
+
   .message-information{
     margin: 0;
   }
@@ -1148,6 +1136,7 @@ textarea:hover {
 
 /*********************400px carousel validé*****************/
 @media screen and (max-width: 400px ) {
+
   .carousel-size p {
     padding: 0px 13px 0 13px;
   }
@@ -1178,13 +1167,57 @@ textarea:hover {
 
 /*********************360px  *****************/
 @media screen and (max-width: 360px ) {
+/********************flip**prestations******************/
+  .flip-card-front >h3 {
+    font-size: 15px;
+  }
+
+  .flip-card-back >h3 {
+    font-size: 13px;
+  }
+
+  .flip-card-back >p {
+    font-size: 13px;
+  }
+  /*************carousel****************/ 
+  #Pourquoi h2 {
+    font-size: 14px;
+}
+  .slick-slide{
+    width: 228px!important;
+  }
+  .slick-prev {
+    top: -180px!important;
+  }
+
+  .slick-next {
+    bottom: 544px;
+    left: calc( 50% + 10px) !important;
+  }
+
+
+/*******************formulaire contact*************/
   .informations-form {
   margin: 0;
   }
+
   .formulaire-contact {
     display: block;
     font-size: 16px;
   }
+
   .form-control {
     width: 310px;
+  }
 }
+
+/*********************320px  *****************/
+/*@media screen and (max-width: 320px ) {
+  .slick-slide{
+    width: 250px !important;
+  }
+
+  .slick-list{
+    width: 95% !important;
+  }
+}*/
