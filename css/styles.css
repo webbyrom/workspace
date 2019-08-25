@@ -922,7 +922,7 @@ textarea:hover {
     right: 8px;
   }
   .scrollup a{
-    font-size: 10px;
+    font-size: 11px;
     top: calc( 50% - 7px );
     right: calc( 50% - 16px);
   }
