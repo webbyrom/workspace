@@ -915,6 +915,21 @@ textarea:hover {
   .img-car2 {
     padding:5px;
   }
+  .scrollup{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    right: 8px;
+  }
+  .scrollup a{
+    font-size: 10px;
+    top: calc( 50% - 7px );
+    right: calc( 50% - 16px);
+  }
+  .scrollup a:hover {
+    transition-duration: 1s;
+    color: var(--section-bg-white);
+  } 
 }
 
 /************760px*************************/
