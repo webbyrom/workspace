@@ -1158,7 +1158,9 @@ textarea:hover {
   .slick-next {
     left: calc( 50% + 22px);
   }
-
+  .formulaire-contact{
+    padding-left: 5px;
+  }
   .horaire {
     width: 380px;
     left: 0;
@@ -1217,8 +1219,6 @@ textarea:hover {
   }*/
 
 
-
-
 /********************flip**prestations******************/
   .flip-card-front >h3 {
     font-size: 15px;
@@ -1254,7 +1254,6 @@ textarea:hover {
   .formulaire-contact {
     display: block;
     font-size: 16px;
-    padding-left: 10px;
   }
 
   .form-control {
