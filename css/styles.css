@@ -257,7 +257,9 @@ p {
 .flip-card-front h3 {
   position: absolute;
   top: -7px;
-  width: 85%;
+  /*width: 85%;*/
+  left: 0;
+  right: 0;
  
 }
 
@@ -804,7 +806,7 @@ textarea:hover {
     display: block;
     width: 25px;
     height: 32px;
-    background-color: red;
+    background-color: var(--nav-bg-black);
     float: left;
     cursor: pointer;
     padding: 8px  16px 15px 16px !important;
@@ -1158,9 +1160,11 @@ textarea:hover {
   .slick-next {
     left: calc( 50% + 22px);
   }
+
   .formulaire-contact{
     padding-left: 5px;
   }
+
   .horaire {
     width: 380px;
     left: 0;
