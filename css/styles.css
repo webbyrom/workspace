@@ -759,6 +759,7 @@ textarea:hover {
     background: url(../images/img_fond2.jpg) no-repeat no-repeat ;
     background-size: contain;
   }
+
   .slick-slide {
     /*margin-left: 80px !important;*/
     position: relative;
@@ -867,6 +868,10 @@ textarea:hover {
 
 /**************850px***************************/
 @media screen and (max-width:850px ) {
+  /*section{
+    padding: 0px 0 100px 0;
+  }*/
+
   .parallax{
     width:100%;
     background: url(../images/img_fond2.jpg) no-repeat no-repeat ;
@@ -1054,15 +1059,21 @@ textarea:hover {
 /****************600px****************/
 @media screen and (max-width:600px ) {
 
+  #Pourquoi h2{
+    padding: 50px 15px;
+  }
+
   .slick-list{
     left: 3%;
   }
 
   .carousel-size p{
-    padding-top: 0%;
+    padding:4px 15px;
+   /* padding-top: 0%;*/
     font-size: 15px;
     text-align: center;
   }
+
   .slick-slide{
    /* width: 342px !important;*/
     margin-left: 28px;
@@ -1116,6 +1127,7 @@ textarea:hover {
     padding: 10px 29px 0 29px;
     text-align: center;
   }
+
   .carousel-2 p{
     font-size: 16px;
     padding-top: 5px;
@@ -1269,13 +1281,13 @@ textarea:hover {
 @media screen and (max-width: 320px ) {
   
   .slick-list{
-    left: 11px;
+    left: 15px;
     width: 264px;
   }
   
-  .slick-next {
+  /*.slick-next {
     left: calc( 50% + 16px) !important;
-  }
+  }*/
 
   .formulaire-contact {
     padding-left: 0;
