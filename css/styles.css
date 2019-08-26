@@ -130,9 +130,9 @@ p {
 
 .parallax {
   position: relative;
-  background: url(../images/img_fond2.jpg) no-repeat ;
-  background-size: cover;
-  height: 100vh;
+  background: url(../images/img_fond2.jpg) no-repeat  no-repeat ;
+  background-size: contain;
+  height: 100vw;/*test*/
   top:0;
   z-index: -5;
 }
@@ -576,6 +576,9 @@ textarea:hover {
 
 /********************* responsive********************/
 @media screen and (max-width: 2560px ) {
+ /*.parallax-1{
+    height: auto;
+  }*/
   .carousel-size p{
    /* padding: 70px 50px 11px 50px !important;*/
     font-size: 25px;
@@ -712,8 +715,8 @@ textarea:hover {
 
   .parallax{
     width:100%;
-    background: url(../images/img_fond2.jpg) no-repeat ;
-    background-size: cover;
+    background: url(../images/img_fond2.jpg) no-repeat no-repeat ;
+    background-size: contain;
   }
 
   .carousel-size p{
@@ -751,8 +754,8 @@ textarea:hover {
 
   .parallax{
     width:100%;
-    background: url(../images/img_fond2.jpg) no-repeat ;
-    background-size: cover;
+    background: url(../images/img_fond2.jpg) no-repeat no-repeat ;
+    background-size: contain;
   }
   .slick-slide {
     /*margin-left: 80px !important;*/
@@ -842,8 +845,8 @@ textarea:hover {
 
   .parallax{
     width:100%;
-    background: url(../images/img_fond2.jpg) no-repeat ;
-    background-size: cover;
+    background: url(../images/img_fond2.jpg) no-repeat no-repeat ;
+    background-size: contain;
   }
 
   .img-car2 {
@@ -864,7 +867,7 @@ textarea:hover {
 @media screen and (max-width:850px ) {
   .parallax{
     width:100%;
-    background: url(../images/img_fond2.jpg) no-repeat ;
+    background: url(../images/img_fond2.jpg) no-repeat no-repeat ;
     background-size: contain;
   }
  
@@ -940,7 +943,7 @@ textarea:hover {
 @media screen and (max-width:760px ) {
   .parallax{
     width:100%;
-    background: url(../images/img_fond2.jpg) no-repeat ;
+    background: url(../images/img_fond2.jpg) no-repeat no-repeat ;
     background-size: contain;
   }
 
@@ -1086,7 +1089,7 @@ textarea:hover {
     /******** header***********/
   .parallax{
     width:100%;
-    background: url(../images/img_fond2.jpg) no-repeat ;
+    background: url(../images/img_fond2.jpg) no-repeat no-repeat ;
     background-size: contain;
   }
 
@@ -1209,6 +1212,13 @@ textarea:hover {
 
 /*********************360px  *****************/
 @media screen and (max-width: 360px ) {
+  /*.parallax-1{
+    height: 239px;
+  }*/
+
+
+
+
 /********************flip**prestations******************/
   .flip-card-front >h3 {
     font-size: 15px;
