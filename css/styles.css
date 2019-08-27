@@ -5,6 +5,7 @@
   --nav-bg-black: #333;
   --color-font-black: #333;
   --color-font-white: #FFFFFF;
+  --color-font-link-hover: #8e24aa;
 
 }
 
@@ -224,6 +225,7 @@ p {
   margin-bottom: 0;
   color: var(--section-bg-white);
   font-size: 20px;
+
 }
 
 /**********flip*************/
@@ -592,6 +594,23 @@ textarea:hover {
   color: red;
 }
 
+.mentions{
+  font-size: 15px;
+  float: left;
+}
+
+.mentions >a{
+  color: var(--color-font-white);
+  text-decoration: none;
+}
+
+.mentions >a:visited{
+  color: var(--color-font-black);
+}
+.mentions >a:hover{
+  color: var(--color-font-link-hover);
+}
+
 
 
 /********************* responsive********************/
@@ -863,6 +882,9 @@ textarea:hover {
   .with-sidebar .menu{
     transform: translateX(0px);
   }
+  h1 {
+    font-size: 40px;
+  }
 
   .parallax{
     width:100%;
@@ -889,7 +911,9 @@ textarea:hover {
   /*section{
     padding: 0px 0 100px 0;
   }*/
-
+  h1 {
+    font-size: 30px;
+  }
   .parallax{
     width:100%;
     background: url(../images/img_fond2.jpg) no-repeat no-repeat ;
@@ -1062,6 +1086,10 @@ textarea:hover {
 }
 /*****************650px****************/
 @media screen and (max-width:650px ) {
+   h1 {
+    font-size: 25px;
+  }
+
   h2{
     font-size: 25px;
   }
@@ -1118,6 +1146,10 @@ textarea:hover {
 /*****************500px****************carousel validé*/
 @media screen and (max-width:500px ) {
     /******** header***********/
+     h1 {
+    font-size: 20px;
+  }
+  
   .parallax{
     width:100%;
     background: url(../images/img_fond2.jpg) no-repeat no-repeat ;
