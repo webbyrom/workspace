@@ -1,9 +1,10 @@
 
 :root {
-  --section-bg-blue:#2980b9;
+  --section-bg-blue: #2980b9;
   --section-bg-white: #FFFFFF;
-  --nav-bg-black:#333;
-  --color-font-black:#333;
+  --nav-bg-black: #333;
+  --color-font-black: #333;
+  --color-font-white: #FFFFFF;
 
 }
 
@@ -22,7 +23,13 @@ section {
 }
 
 h1{
-  display: none;
+  font-size: 45px;
+  opacity: 0;
+  position: relative;
+  color: var(--color-font-black);
+  left: -475px;
+  text-transform: uppercase;
+  bottom: -24px;
 }
 
 h2 {
