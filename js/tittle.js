@@ -5,6 +5,7 @@ $(window).ready(function() {
 			right: '0',
 			height: '85px',
 			top: '+=20px',
+			opacity: '0.5',
 			opacity: '1'
 		},4000);
 	});
