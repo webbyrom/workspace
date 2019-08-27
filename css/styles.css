@@ -1211,6 +1211,11 @@ textarea:hover {
   table{
     width: 100%;
   }
+
+  .mentions, .down-page p{
+    font-size: 10px;
+  }
+
 }  
 
 /*********************450px ******/
