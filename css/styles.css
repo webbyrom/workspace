@@ -12,7 +12,7 @@
 body {
   margin: 0;
   text-align: center;
-  background-color: var(--section-bg-blue);
+  background-color: var(--section-bg-white);
   font-family: 'Rubik','sans-serif';
 }
 
@@ -156,6 +156,10 @@ p {
  }
 
 /************Css des différentes sections*****/
+/*#top-header{
+  background-color: var(--section-bg-white);
+  z-index: -6;
+}*/
 #Prestations-divider {
   width: 100%!important;
   height: 5px;
@@ -198,14 +202,17 @@ p {
   color: var(--section-bg-white);
  /* padding-bottom: 40px;*/
 }
-
-.down_page p {
+.down-page{
   background: var(--section-bg-blue);
+
+}
+.down-page p {
   height: 80px;
   text-align: center;
   padding-top: 20px;
   margin-bottom: 0;
   color: var(--section-bg-white);
+  font-size: 20px;
 }
 
 /**********flip*************/
@@ -548,7 +555,7 @@ textarea:hover {
   font-weight: bolder;
   background-image: url(../images/horaire1.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat no-repeat;
   border-radius: 2px;
   box-shadow: 10px 5px 5px grey;
 }
