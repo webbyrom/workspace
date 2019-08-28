@@ -8,10 +8,9 @@
   --color-font-white: #FFFFFF;
   --color-font-link-hover: #8e24aa;
   --color-divider-blue: #a5c0d2;
+  --color-font-grey: grey;
 
 }
-
-
 
 body {
   margin: 0;
