@@ -2,10 +2,12 @@
 :root {
   --section-bg-blue: #2980b9;
   --section-bg-white: #FFFFFF;
+  --bg-black: #333;
   --nav-bg-black: #333;
   --color-font-black: #333;
   --color-font-white: #FFFFFF;
   --color-font-link-hover: #8e24aa;
+  --color-divider-blue: #a5c0d2;
 
 }
 
@@ -157,7 +159,7 @@ p {
 .divider {
   width: 100%;
   height: 5px;
-  background: #a5c0d2;
+  background: var(--color-divider-blue);
   opacity: .3;
   margin: 0 auto;
 }
@@ -175,7 +177,7 @@ p {
 #Prestations-divider {
   width: 100%!important;
   height: 5px;
-  background: #a5c0d2;
+  background: var(--color-divider-blue);
   opacity: .3;
    /*margin: 0 auto;*/
 }
@@ -269,7 +271,7 @@ p {
 
 .flip-card-front {
   background-color: #bbb;
-  color: black;
+  color: var(--color-font-black);
   transform: rotateX(0deg);/* pour compatibilité firefox*/
   z-index: 2;
 }
@@ -480,7 +482,7 @@ textarea:hover {
 .button1:hover {
   opacity: .5;
   transition-duration: 1s;
-  color: black;
+  color: var(--color-font-black);
   cursor: pointer;
 }
 
@@ -498,7 +500,7 @@ textarea:hover {
   bottom: 20px;
   width: 30px;
   height: 30px;
-  background-color: black;
+  background-color: var(--bg-black);
   border-radius: 50%;
   padding: 20px;
   opacity: .5;
@@ -564,7 +566,7 @@ textarea:hover {
   cursor: pointer;
   /*background-color:  var(--section-bg-blue);*/
   /*opacity: 0.4;*/
-  color: black;
+  color: var(--color-font-black);
   font-weight: bolder;
   background-image: url(../images/horaire1.jpg);
   background-size: cover;
@@ -1220,6 +1222,10 @@ textarea:hover {
 
 /*********************450px ******/
 @media screen and (max-width: 450px) {
+  h1{
+    font-size: 15px;
+  }
+  
   .slick-prev {
     left: calc( 50% - 60px);
   }
