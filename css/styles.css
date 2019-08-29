@@ -925,6 +925,7 @@ textarea:hover {
   .with-sidebar .menu{
     transform: translateX(0px);
   }
+
   h1 {
     font-size: 40px;
   }
@@ -1190,8 +1191,8 @@ textarea:hover {
 @media screen and (max-width:500px ) {
     /******** header***********/
      h1 {
-    font-size: 20px;
-  }
+      font-size: 35px;
+   }
   
   .parallax{
     width:100%;
