@@ -20,11 +20,11 @@ function myFunction(x) {
 					duration: 3000
 			})
 			.animate({ fontSize: "18px"}, 2500)
-			.css({ color: "purple"}, 5000)		
+			.css({ color: "#76007f"}, 5000)		
 	});
 });	
-    //document.body.style.backgroundColor = "yellow";//
-  } else {
+  
+  } else {//size screen desktop///
 		$(window).ready(function() {
 			$("h1").ready(function(){
 				$("h1").animate({
@@ -38,12 +38,12 @@ function myFunction(x) {
 
 					})
 				.animate({fontSize:"40px"}, 5000)
-				.css({ color: "purple"}, 5000)
+				.css({ color: "#76007f"}, 5000)
 			});		
 		});
 	};
 };
-   //document.body.style.backgroundColor = "pink";//
+   
   
 
 
