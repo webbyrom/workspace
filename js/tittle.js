@@ -8,18 +8,20 @@ function myFunction(x) {
   if (x.matches) { // If media query matches
   	$(window).ready(function() {
 		$("h1").ready(function(){
-			$("h1").animate({
+			$("h1")
+			.animate({
 				left: '0',
 				right: '0',
 				top: '-=77px',
 				opacity: '0.5',
-				opacity: '1',
-				fontSize:'-=10px',
-				transitionDuration:'5s'
-				},4000);
-			$("h1").css({
-				color: 'purple'
-		});		
+				opacity: '1',				
+				}, {
+					queue: false,
+					duration: 3000
+			})
+			.animate({ fontSize: "21px",
+			},1500)
+			.css({ color: "purple"},3000)		
 	});
 });	
     //document.body.style.backgroundColor = "yellow";//
@@ -29,11 +31,11 @@ function myFunction(x) {
 					$("h1").animate({
 						left: '0',
 						right: '0',
-						top: '+=12px',
+						//top: '+=12px',
 						opacity: '0.5',
 						opacity: '1',
-						fontSize:'+=30px',
-						transitionDuration:'5s'
+						fontSize:'+=30px'
+						//duration:'500'
 						},4000);
 					$("h1").css({
 						color: 'purple'

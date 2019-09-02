@@ -29,7 +29,7 @@ h1{
   opacity: 0;
   position: relative;
   color: var(--color-font-black);
-  left: -475px;
+  /*left: -475px;*/
   text-transform: uppercase;
   bottom: -24px;
 }
@@ -956,7 +956,7 @@ textarea:hover {
     padding: 0px 0 100px 0;
   }*/
   h1 {
-    font-size: 30px;
+    font-size: 10px;
   }
   .parallax{
     width:100%;
@@ -1131,7 +1131,7 @@ textarea:hover {
 /*****************650px****************/
 @media screen and (max-width:650px ) {
    h1 {
-    font-size: 25px;
+    font-size: 15px;
   }
 
   h2{
