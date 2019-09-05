@@ -600,13 +600,12 @@ textarea:hover {
 
 .horaire {
   position: relative;
-  left: 18px;
-  display: inline-grid;
+  opacity: 0;
+  /*margin: auto;*/
+  right: -3000px;
   width: 40%;
   height: 250px;
   cursor: pointer;
-  /*background-color:  var(--section-bg-blue);*/
-  /*opacity: 0.4;*/
   color: var(--color-font-black);
   font-weight: bolder;
   background-image: url(../images/horaire1.jpg);
@@ -616,11 +615,15 @@ textarea:hover {
   box-shadow: 10px 5px 5px grey;
 }
 
-.horaire:hover {
+.horaire >table{
+  width: 100%;
+}
+
+/*.horaire:hover {
   transition-duration: 6s;
   transform: rotateY(360deg) rotateX(360deg) scale(1.4);
 }
-
+*/
 .days {
   width: 50px;
 }
@@ -636,7 +639,7 @@ textarea:hover {
 .closed {
   color: red;
 }
-
+/*******mentions légales********/
 .mentions{
   font-size: 15px;
   float: left;
@@ -692,9 +695,9 @@ textarea:hover {
     padding: 12.5%;
 
   }
-  .horaire{
+  /*.horaire{
     left: 0;
-  }
+  }*/ /*mis en commentaire pour tester animation js*/
 }
 
 @media screen and (max-width: 1400px ) {
