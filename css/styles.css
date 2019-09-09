@@ -516,7 +516,7 @@ textarea:hover {
   color: var(--section-bg-white);
   border: none;
   border-radius: 5px;
-  width: 150px;
+  width: 270px;
   font: inherit;
 }
 
@@ -598,11 +598,17 @@ textarea:hover {
   position: relative; /******nécessaire pour l'animation jquery****/
 }
 
+.button-horaire{
+  font-size: 22px;
+  padding:5px;
+  margin-bottom: 45px;
+}
+
 .horaire {
   position: relative;
   opacity: 0;
-  /*margin: auto;*/
-  right: -3000px;
+  margin: auto;
+  /*right: -3000px;*/
   width: 40%;
   height: 250px;
   cursor: pointer;

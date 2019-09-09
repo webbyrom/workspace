@@ -16,11 +16,11 @@ function myFunction(x) {
 				opacity: '0.5',
 				opacity: '1',				
 				}, {
-					queue: false,
+					queue: true,
 					duration: 3000
 			})
 			.animate({ fontSize: "18px"}, 2500)
-			.css({ color: "#76007f"}, 5000)		
+			.css({ color: "#76007f", margin: "auto"}, 5000)		
 	});
 });	
   
@@ -34,11 +34,10 @@ function myFunction(x) {
 					opacity: '1',
 					}, {
 						queue :false,
-						duration: 4000
-
-					})
-				.animate({fontSize:"40px"}, 5000)
-				.css({ color: "#76007f"}, 5000)
+						duration: 3000
+				})
+				.animate({fontSize:"40px"}, 3000)
+				.css({ color: "#76007f"})
 			});		
 		});
 	};
