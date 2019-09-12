@@ -1,9 +1,18 @@
 // fonction pour animation titre quelque soit la taille de l'écran
 /* breakpoint a 1080 pour le font-size h1 */
 
+
+
+
+
+
+
+
+
+/* reprendre les tailles avant de faire quoique ce soit*/
 function tittle($){
 	var screenSize = $(window).width();
-	if (screenSize >= 850  && screenSize <=1100){
+	if (screenSize >= 650 && screenSize <=850){
 		$(window).ready(function(){
 			$("h1").ready(function(){
 				$("h1")
@@ -18,12 +27,12 @@ function tittle($){
 					queue: true,
 					duration: 3000
 				})
-				.animate({ fontSize: "30px"}, 2500)
+				.animate({ fontSize: "18px"}, 2500)
 				.css({ color: "#76007f", height: "110px", margin: "auto"}, 5000)
 			});
 		});
 	}
-	else if (screenSize < 850 && screenSize >=650){
+	else if (screenSize < 650 && screenSize >=450){
 		$(window).ready(function(){
 			$("h1").ready(function(){
 				$("h1")
@@ -37,27 +46,27 @@ function tittle($){
 					queue: true,
 					duration: 3000
 				})
-				.animate({ fontSize: "18px"}, 2500)
+				.animate({ fontSize: "15px"}, 2500)
 				.css({ color: "#76007f", margin: "auto"}, 5000)
 			});
 		});
 	}
-	else if (screenSize < 650 && screenSize >=650){
+	else if (screenSize < 450 && screenSize >=320){
 		$(window).ready(function(){
 			$("h1").ready(function(){
 				$("h1")
 				.animate({
 					left: "0",
 					right:"0",
-					top: "-=35px",
+					top: "-=59px",
 					opacity: "0.5",
 					opacity: "1",
 				}, {
 					queue: true,
 					duration: 3000
 				})
-				.animate({ fontSize: "18px"}, 2500)
-				.css({ color: "#76007f", margin: "auto"}, 5000)
+				.animate({ fontSize: "23px"}, 2500)
+				.css({ color: "#76007f", padding:"0px 24px 0px 60px", margin:"0"}, 5000)
 			});
 		});
 	}
