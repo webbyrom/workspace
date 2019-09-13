@@ -19,7 +19,7 @@ function tittle($){
 				.animate({
 					left: "0",
 					right:"0",
-					top: "+=55px",
+					top: "-=53px",
 					opacity: "0.5",
 					opacity: "1",
 
@@ -27,8 +27,8 @@ function tittle($){
 					queue: true,
 					duration: 3000
 				})
-				.animate({ fontSize: "18px"}, 2500)
-				.css({ color: "#76007f", height: "110px", margin: "auto"}, 5000)
+				.animate({ fontSize: "27px"}, 2500)
+				.css({ color: "#76007f", padding: "0px 25px 0px 70px"}, 5000)
 			});
 		});
 	}
@@ -39,15 +39,15 @@ function tittle($){
 				.animate({
 					left: "0",
 					right:"0",
-					top: "-=35px",
+					top: "-=55px",
 					opacity: "0.5",
 					opacity: "1",
 				}, {
 					queue: true,
 					duration: 3000
 				})
-				.animate({ fontSize: "15px"}, 2500)
-				.css({ color: "#76007f", margin: "auto"}, 5000)
+				.animate({ fontSize: "28px"}, 2500)
+				.css({ color: "#76007f", padding: "0px 24px 0px 63px"}, 5000)
 			});
 		});
 	}
