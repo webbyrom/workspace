@@ -596,6 +596,11 @@ textarea:hover {
   box-shadow: 10px 5px 5px grey;
   border-radius: 5px;
   position: relative; /******nécessaire pour l'animation jquery****/
+
+}
+
+.tel a{
+  text-decoration: none;
 }
 
 .button-horaire{
